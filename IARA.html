@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <title>AR.js App</title>
+  <!-- AR.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/@jeromeetienne/ar.js@3.0.0/aframe/build/aframe-ar.js"></script>
+  <!-- Three.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.117.0/build/three.min.js"></script>
+</head>
+<body style="margin : 0px; overflow: hidden;">
+  <!-- AR.js marker -->
+  <a-marker type='pattern' url='path/to/pattern.patt'>
+    <!-- AR content -->
+    <a-entity>
+      <!-- Display image -->
+      <a-image src='path/to/image.jpg'></a-image>
+    </a-entity>
+  </a-marker>
+  <!-- AR camera -->
+  <a-camera-static/>
+</body>
+</html>
